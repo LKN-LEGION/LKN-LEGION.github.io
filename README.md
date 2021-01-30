@@ -1,2 +1,2 @@
-# LKN-LEGION.github.io
-My first repository
+# Продавец обуви
+Продаю турецкую обувь
