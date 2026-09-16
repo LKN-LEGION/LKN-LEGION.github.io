@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pupper VPN — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0d1620; --card:#121e2b; --text:#e7eef5; --muted:#93a7bc; --accent:#3be0c0; --line:#22364a; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f5f7fa; --card:#ffffff; --text:#152030; --muted:#5a6b7d; --accent:#0d9b82; --line:#dfe6ee; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 34px; margin: 0 0 6px; letter-spacing:-.5px; }
+  .updated { color: var(--muted); margin: 0 0 32px; font-size: 14px; }
+  h2 { font-size: 21px; margin: 36px 0 10px; }
+  p, li { color: var(--text); }
+  .card { background: var(--card); border:1px solid var(--line); border-radius: 14px; padding: 18px 22px; margin: 22px 0; }
+  .card strong { color: var(--accent); }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  table { width:100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 40px; border-top:1px solid var(--line); padding-top: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pupper VPN — Privacy Policy</h1>
+  <p class="updated">Applies to the Android app <code>com.FGStudio.FreeVPN</code>. Last updated: 16 September 2026.</p>
+
+  <div class="card">
+    <p><strong>The short version.</strong> We do not keep logs of what you do through the VPN. We do not
+    record the sites you visit, your DNS queries, or the contents of your traffic. There are no
+    accounts, so there is nothing that ties a tunnel to your identity. The app is paid for by ads,
+    and the ad SDK — not the VPN — is the only part that sees an advertising identifier.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>Pupper VPN is developed and operated by FG Studio. Contact: <a href="mailto:genryk75@gmail.com">genryk75@gmail.com</a>.
+  We operate the VPN servers ourselves; the tunnel is not resold or routed through a third-party VPN provider.</p>
+
+  <h2>2. What the VPN service stores</h2>
+  <p>To run the tunnel at all, the server has to hold a small amount of technical state. It is kept in
+  memory and on the server only while your session is alive, and it is deleted when the session ends
+  or expires.</p>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Kept for</th></tr>
+    <tr><td>Your device's public key (WireGuard/AmneziaWG)</td><td>To encrypt the tunnel to your device only</td><td>Until the session ends</td></tr>
+    <tr><td>The private tunnel IP assigned to you (e.g. 10.66.x.x)</td><td>To route packets back to you</td><td>Until the session ends</td></tr>
+    <tr><td>Session start, expiry time and reward state</td><td>To count down your free session and apply priority speed</td><td>Until the session ends</td></tr>
+    <tr><td>Aggregate byte counters and the number of peers online</td><td>To share bandwidth fairly and size the server</td><td>Aggregate only, not per-user history</td></tr>
+  </table>
+  <p>We do <strong>not</strong> store: visited domains or URLs, DNS query logs, packet contents,
+  a history of your real IP addresses, or any per-user traffic archive.</p>
+
+  <h2>3. Content filtering</h2>
+  <p>The server resolves DNS for everyone on the tunnel and blocks adult (18+) and malware domains
+  from a public blocklist. Search engines and YouTube are not modified: there is no forced
+  SafeSearch and no restricted mode. Filtering happens in real time; queries are answered and
+  discarded, not logged. If you need a completely unfiltered connection, this app is not the right
+  tool.</p>
+
+  <h2>4. Ads</h2>
+  <p>The app shows ads through CAS.AI (Clever Ads Solutions) and its mediation partners. The ad SDK
+  may process your advertising identifier (AD_ID), coarse device and app information, and ad
+  interaction events. This is standard for ad-supported apps and is handled by the SDK, not by us —
+  we never receive your browsing activity from it.</p>
+  <p>Ads never play while the tunnel is up: the app pauses the VPN for the video and reconnects
+  afterwards. Your VPN traffic is therefore never visible to an ad network.</p>
+  <p>You can review or withdraw your advertising consent at any time from the in-app menu
+  ("Ad settings"), and you can reset or delete the advertising identifier in your Android settings.</p>
+
+  <h2>5. Usage statistics</h2>
+  <p>The app uses Google Firebase Analytics to count app opens and whether connection attempts
+  succeed, together with technical device and app data that Firebase processes (such as the app
+  version, device model and an app-instance identifier). Visited sites, server IP addresses and
+  VPN keys are never included, and the advertising identifier is not used for analytics.</p>
+  <p>Where the GDPR applies, analytics storage follows the choice you make in the consent dialog
+  shown before the first ad. Everywhere, you can turn statistics off at any time in the app menu
+  ("Usage statistics"); turning them off also clears the analytics data stored on the device.</p>
+
+  <h2>6. Permissions the app asks for</h2>
+  <ul>
+    <li><strong>VPN connection</strong> — granted by you in an Android system dialog; required to create the tunnel.</li>
+    <li><strong>Notifications</strong> — to show the ongoing session notification with the countdown, speed and a disconnect action.</li>
+    <li><strong>Internet / network state</strong> — to reach the VPN server and detect connection changes.</li>
+  </ul>
+  <p>The app does not request access to contacts, files, location, camera, microphone, or SMS.</p>
+
+  <h2>7. Children</h2>
+  <p>Pupper VPN is not directed at children. The app is rated for users aged 18 and over and is not part
+  of the Google Play Families programme.</p>
+
+  <h2>8. Sharing and legal requests</h2>
+  <p>We do not sell personal data and we do not share VPN activity with anyone, because we do not
+  have it. If we receive a legal request for user activity, we can only answer with what exists:
+  aggregate server metrics and, for a live session, the technical state listed in section 2.</p>
+
+  <h2>9. Your choices</h2>
+  <ul>
+    <li>Disconnect at any time from the app or from the notification — session state is deleted on disconnect.</li>
+    <li>Turn usage statistics off (or back on) in the menu ("Usage statistics").</li>
+    <li>Change or withdraw ad consent in the menu ("Ad settings").</li>
+    <li>Uninstall the app — nothing remains on our side once your session expires.</li>
+    <li>Ask us anything about your data at <a href="mailto:genryk75@gmail.com">genryk75@gmail.com</a>; we reply within 30 days.</li>
+  </ul>
+
+  <h2>10. Changes</h2>
+  <p>If this policy changes in a way that affects what we store, we will update the date at the top of
+  this page and describe the change in the app's release notes.</p>
+
+  <footer>FG Studio · Pupper VPN for Android · <a href="mailto:genryk75@gmail.com">genryk75@gmail.com</a></footer>
+</main>
+</body>
+</html>
