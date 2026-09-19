@@ -1,112 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="aWaHxOuh6k8QLQwfWhQZLGKssleEPEvI1Jh4I1Qom-w" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML5 и CSS3 сайт</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0d">
+  <meta name="description" content="FGStudio makes mobile games built around driving, destruction, physics, and unexpected fun. Explore all eight games on Google Play.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="FGStudio — Games Without Brakes">
+  <meta property="og:description" content="Driving, destruction, physics, and unexpected fun. Explore the games of FGStudio.">
+  <meta property="og:image" content="og-en.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="og-en.png">
+  <title>FGStudio — Games Without Brakes</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div id="logo" onclick="slowScroll('#top')">
-      <span>ProStalk</span>
-    </div>
-    <div id="about">
-      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
-      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
-      <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
-      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
-    </div>
+  <header class="nav shell" id="top">
+    <a class="brand" href="#top" aria-label="FGStudio home"><span class="brand-mark">FG</span><span>STUDIO</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#games">Games</a>
+      <a href="#studio">Studio</a>
+      <a class="nav-cta" href="https://play.google.com/store/apps/developer?id=LastCall" target="_blank" rel="noopener noreferrer">Google Play <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
 
-  <div id="top">
-    <h1>Программирование</h1>
-    <h3>как способ жизни!</h3>
-  </div>
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Independent game studio</p>
+        <h1 id="hero-title">Games made<br>to <em>jump into.</em></h1>
+        <p class="hero-text">Cars, destruction, unpredictable physics, and a little chaos. FGStudio makes mobile games where every run has a story of its own.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#games">Explore our games <span>↓</span></a>
+          <a class="button ghost" href="https://play.google.com/store/apps/developer?id=LastCall" target="_blank" rel="noopener noreferrer">Find us on Google Play ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="games/car-skill-test-shot2.webp" alt="A car driving through a giant stunt tunnel in Car Skill Test">
+        <span class="poster-label">DRIVE / CRASH / REPEAT</span>
+        <strong>FULL<br>SEND</strong>
+        <p>NO BRAKES.<br>JUST PHYSICS.</p>
+      </div>
+    </section>
 
-  <div id="main">
-    <div class="intro">
-      <h2>Наши услуги помогут вам!</h2>
-      <span>Большой выбор всего, что может вам пригодиться</span>
-    </div>
-    <div class="text">
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit, ut vero commodi voluptate? Ipsam reiciendis, necessitatibus incidunt ipsa quis sapiente excepturi, optio iusto voluptatibus dolorem officia quidem, numquam eaque minus, autem praesentium rem architecto dolores. Ipsa unde id velit optio magni enim! Illum obcaecati, dolorem distinctio nemo, ipsum iure.</span>
-    </div>
-  </div>
+    <div class="ticker" aria-hidden="true"><div>RACING <b>✦</b> PHYSICS <b>✦</b> DESTRUCTION <b>✦</b> CO-OP <b>✦</b> RACING <b>✦</b> PHYSICS <b>✦</b> DESTRUCTION <b>✦</b></div></div>
 
-  <div id="overview">
-    <h2>Преимущества</h2>
-    <h4>с нами все проще</h4>
+    <section class="games shell" id="games" aria-labelledby="games-title">
+      <div class="section-head">
+        <div><p class="eyebrow"><span></span> The lineup</p><h2 id="games-title">Pick your<br>kind of chaos.</h2></div>
+        <p>From a fishing trip that goes completely off the rails to hard stunt tracks and spectacular car crashes, every game brings a different way to play.</p>
+      </div>
 
-    <div class="img">
-      <img src="https://itproger.com/img/courses/1532975967.jpg" alt="">
-      <span>Изучение языка Ruby для начинающих</span>
-    </div>
-    <div class="img">
-      <img src="https://itproger.com/img/courses/1530341233.jpg" alt="">
-      <span>Уроки PhotoShop для начинающих</span>
-    </div>
-  </div>
+      <article class="game-feature">
+        <div class="feature-media">
+          <img src="games/why-to-fish-shot1.webp" alt="Why to Fish: Online gameplay with a team of adventurers" loading="lazy">
+          <span class="media-badge">01 / ONLINE CO-OP</span>
+        </div>
+        <div class="feature-copy">
+          <p class="game-type">CO-OP · ACTION · PHYSICS</p>
+          <h3>Why to Fish:<br>Online</h3>
+          <p>Fishing is only the beginning. Team up online, travel between six islands by boat, catch unusual fish, and face a giant boss on each island. Ragdoll physics, collisions, and explosive accidents can turn even a quiet trip into a memorable mess.</p>
+          <p>Play solo or with friends, earn rewards, upgrade your equipment, and experiment with 22 unlockable weapons. The Google Play listing describes online play for up to eight players.</p>
+          <ul class="highlights"><li>Six islands and six bosses</li><li>Ten types of fish</li><li>22 weapons to unlock</li></ul>
+          <a class="text-link" href="https://play.google.com/store/apps/details?id=com.FGStudio.WhyToFish" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+        </div>
+      </article>
 
-  <div id="contacts">
-    <center><h5>Обратная связь</h5></center>
-    <form id="form_input">
-      <label for="name">Имя <span>*</span></label><br>
-      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
-      <label for="email">Ваша почта <span>*</span></label><br>
-			<input type="email" placeholder="Введите email" name="email" id="email"><br>
-			<label for="message">Сообщение <span>*</span></label><br>
-			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
-			<div id="mess_send" class="btn">Отправить</div>
-    </form>
-  </div>
+      <div class="games-grid">
+        <article class="game-card">
+          <div class="card-image portrait-triptych">
+            <img src="games/smash-buildings-shot1.webp" alt="Smash Buildings Fest: dropping a massive bomb" loading="lazy">
+            <img src="games/smash-buildings-shot2.webp" alt="Smash Buildings Fest: firing an orbital laser" loading="lazy">
+            <img src="games/smash-buildings-shot3.webp" alt="Smash Buildings Fest: a building destruction mission" loading="lazy">
+            <span class="card-number">02</span>
+          </div>
+          <div class="card-content">
+            <p class="game-type">DESTRUCTION · SIMULATION</p>
+            <h3>Smash Buildings Fest: Destroy</h3>
+            <p>Pick a building, find its weak point, and bring the whole structure down. Every level is a new demolition challenge, with damage targets, stars, rewards, and more powerful tools to unlock.</p>
+            <p>Experiment with rockets, miniguns, lasers, black holes, hurricanes, and more. You can even launch vehicles into structures and watch physics-driven chain reactions tear them apart.</p>
+            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.FGStudio.SmashBuildings" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+          </div>
+        </article>
 
-  <div id="faq">
-    <div>
-      <span class="title">Оплата</span><br>
-      <span class="heading">Как будет проходит оплата?</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Как будет проходит оплата?</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Как будет проходит оплата?</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-    </div>
-    <div>
-      <span class="title">Информация</span><br>
-      <span class="heading">Что входит в услуги сервиса</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Что входит в услуги сервиса</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Что входит в услуги сервиса</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-    </div>
-    <div>
-      <span class="title">Гарантии</span><br>
-      <span class="heading">Какие гарантии есть</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Какие гарантии есть</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-      <span class="heading">Какие гарантии есть</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae asperiores debitis perspiciatis perferendis nemo tempore distinctio officia commodi et non tempora laudantium culpa nostrum, quidem, quasi ratione itaque nam.</p>
-    </div>
-  </div>
+        <article class="game-card">
+          <div class="card-image"><img src="games/car-skill-test-shot1.webp" alt="Car Skill Test gameplay on a suspended stunt track" loading="lazy"><span class="card-number">03</span></div>
+          <div class="card-content">
+            <p class="game-type">DRIVING · STUNT PARKOUR</p>
+            <h3>Car Skill Test: Stunt Parkour</h3>
+            <p>Take precise control of a vehicle on obstacle courses high above the ground. Narrow roads, steep ramps, sharp corners, moving hazards, and big jumps make every checkpoint feel earned.</p>
+            <p>Try cars, vans, buses, off-road machines, and other vehicles, each with its own handling. Survive hard landings and visible damage, use boosters when you need them, and reach the finish in one piece.</p>
+            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.LastCall.SkillTestPro" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+          </div>
+        </article>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    function slowScroll(id) {
-      $('html, body').animate({
-        scrollTop: $(id).offset().top
-      }, 500);
-    }
+        <article class="game-card">
+          <div class="card-image"><img src="games/opers-city-shot2.webp" alt="A damaged car in the city in Opers City" loading="lazy"><span class="card-number">04</span></div>
+          <div class="card-content">
+            <p class="game-type">DRIVING · CITY EXPLORATION</p>
+            <h3>Opers City</h3>
+            <p>Explore a city built for fast drives, drifting, and car experiments. Tune familiar AvtoVAZ cars, including the Priora and the classic Seven, to give each ride your own style.</p>
+            <p>Hit the streets with flashing lights and sirens, practice your drifting, and put your vehicles through crash tests. It is a driving playground with a distinctive local atmosphere.</p>
+            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.LastCall.OperSueta" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+          </div>
+        </article>
 
-    $(document).on("scroll", function () {
-      if($(window).scrollTop() === 0)
-        $("header").removeClass("fixed");
-      else
-        $("header").attr("class", "fixed");
-    });
-  </script>
+        <article class="game-card">
+          <div class="card-image"><img src="games/car-crash-arena-shot1.webp" alt="A vehicle collision in Car Crash Arena" loading="lazy"><span class="card-number">05</span></div>
+          <div class="card-content">
+            <p class="game-type">CAR COMBAT · SANDBOX</p>
+            <h3>Car Crash Arena: Sandbox</h3>
+            <p>Step into a car-destruction sandbox with different ways to cause trouble. Flip vehicles, battle other cars, chase rivals in tag mode, or explore city and arena environments.</p>
+            <p>Some vehicles bring extra tools, including a machine gun or lifting mechanism. Deformation, falling parts, and multiple camera angles make every collision worth watching.</p>
+            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.LastCall.CarCrashArena" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="card-image"><img src="games/dmg-drive-shot1.webp" alt="Two cars colliding in Dmg Drive" loading="lazy"><span class="card-number">06</span></div>
+          <div class="card-content">
+            <p class="game-type">CRASH TESTS · DRIVING</p>
+            <h3>Dmg Drive</h3>
+            <p>Put a varied garage through demanding test drives and spectacular crashes. Cars deform, parts break away, and different maps invite you to try new impacts, jumps, and stunts.</p>
+            <p>Complete missions to earn points, improve your vehicle, or buy another one. Switch camera views, try different routes, and see how far each machine can go before it falls apart.</p>
+            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.FailGames.DmgDrive" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="card-image"><img src="games/royal-jeep-shot1.webp" alt="A jeep crashing into a barrier in Royal Jeep Crash" loading="lazy"><span class="card-number">07</span></div>
+          <div class="card-content">
+            <p class="game-type">CAR CRASHES · STUNTS</p>
+            <h3>Royal Jeep Crash</h3>
+            <p>Drive a broad collection of vehicles across dangerous test areas and put their durability to the test. The focus is on impact: crumpling bodywork, parts coming loose, and dramatic stunt landings.</p>
+            <p>Work through missions and challenges to earn points for upgrades and new vehicles. Different maps, difficulty levels, and camera views give you more ways to stage your next crash.</p>
+            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.FailGames.RoyalJeepCrash" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="card-image"><img src="games/top-cars-shot2.webp" alt="Night city driving in Top Cars Driving" loading="lazy"><span class="card-number">08</span></div>
+          <div class="card-content">
+            <p class="game-type">TRAFFIC RACING · DRIFTING</p>
+            <h3>Top Cars Driving</h3>
+            <p>Find your rhythm between highway traffic, night-city streets, and winding mountain roads. Overtake cars, pick your racing line, and link controlled drifts through tight turns.</p>
+            <p>Tune and upgrade your cars as you chase faster, cleaner runs. When things go wrong, collision and deformation physics turn a missed corner into a cinematic crash.</p>
+            <a class="text-link" href="https://play.google.com/store/apps/details?id=com.LastCall.TopCarsDriving" target="_blank" rel="noopener noreferrer">View on Google Play <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+      <a class="all-games" href="https://play.google.com/store/apps/developer?id=LastCall" target="_blank" rel="noopener noreferrer"><span>All games on Google Play</span><strong aria-hidden="true">↗</strong></a>
+    </section>
+
+    <section class="studio" id="studio"><div class="studio-inner shell">
+      <p class="giant-fg" aria-hidden="true">FG</p>
+      <div class="studio-copy"><p class="eyebrow"><span></span> About the studio</p><h2>Physics.<br>Speed.<br><em>Pure fun.</em></h2><p>FGStudio is an independent game studio. We create easy-to-pick-up games with a personality of their own: spectacular crashes, lively physics, challenging tracks, and room to experiment.</p></div>
+      <div class="stats"><div><strong>8</strong><span>games on Google Play</span></div><div><strong>1M+</strong><span>downloads for Opers City</span></div><div><strong>100%</strong><span>indie energy</span></div></div>
+    </div></section>
+
+    <section class="contact shell"><p class="eyebrow"><span></span> Get in touch</p><h2>Got an idea?<br><em>Let's play.</em></h2><div class="contact-row"><a href="mailto:777even999@gmail.com">777even999@gmail.com <span>↗</span></a><p>Questions, ideas,<br>and collaborations</p></div></section>
+  </main>
+
+  <footer class="footer shell"><a class="brand" href="#top"><span class="brand-mark">FG</span><span>STUDIO</span></a><p>© <span id="year">2026</span> FGStudio. All rights reserved.</p><a href="https://play.google.com/store/apps/developer?id=LastCall" target="_blank" rel="noopener noreferrer">Google Play ↗</a></footer>
 </body>
 </html>

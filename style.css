@@ -1,374 +1,172 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Russo+One&display=swap');
+:root{--ink:#090b0d;--paper:#f3f1e9;--acid:#dfff00;--line:rgba(255,255,255,.16)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:#fff;font-family:Manrope,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.shell{width:min(1380px,calc(100% - 64px));margin-inline:auto}.nav{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-family:'Russo One',sans-serif;font-size:18px;letter-spacing:.08em}.brand-mark{display:grid;place-items:center;width:44px;height:44px;background:var(--acid);color:var(--ink);font-size:16px;transform:skew(-8deg)}nav{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.09em}.nav-cta{padding:13px 17px;border:1px solid var(--line)}.hero{min-height:760px;display:grid;grid-template-columns:1.12fr .88fr;gap:6vw;align-items:center;padding-block:70px}.eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 24px;color:#a8adb2;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.eyebrow span{width:28px;height:3px;background:var(--acid)}h1,h2,h3{font-family:'Russo One',Impact,sans-serif;text-transform:uppercase;font-weight:400;margin:0;line-height:.94}h1{font-size:clamp(54px,6.4vw,102px);letter-spacing:-.045em}h1 em,h2 em{color:var(--acid);font-style:normal}.hero-text{max-width:620px;margin:32px 0;color:#a8adb2;font-size:17px;line-height:1.65}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.button{min-height:54px;display:inline-flex;align-items:center;justify-content:center;padding:0 22px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.2s}.button span{margin-left:34px;font-size:18px}.button.primary{background:var(--acid);color:var(--ink)}.button.ghost{border:1px solid var(--line)}.button:hover,.nav-cta:hover{transform:translateY(-2px)}.hero-visual{position:relative;min-height:590px;overflow:hidden;background:var(--acid);color:var(--ink);transform:rotate(2.2deg);isolation:isolate}.hero-visual:before{content:"";position:absolute;inset:0;opacity:.22;background-image:linear-gradient(rgba(0,0,0,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.5) 1px,transparent 1px);background-size:44px 44px}.poster-label,.poster-number{position:absolute;top:25px;z-index:4;font-size:11px;font-weight:800;letter-spacing:.15em}.poster-label{left:28px}.poster-number{right:28px}.hero-visual>strong{position:absolute;left:30px;bottom:112px;z-index:5;font-family:'Russo One';font-size:clamp(70px,8vw,130px);line-height:.78;letter-spacing:-.07em;color:#fff;text-shadow:6px 6px 0 #090b0d}.hero-visual>p{position:absolute;right:28px;bottom:24px;z-index:5;margin:0;text-align:right;font-weight:800;font-size:12px;letter-spacing:.12em}.road{position:absolute;width:140%;height:190px;left:-20%;top:180px;background:#111;transform:rotate(-19deg) skewX(-20deg);box-shadow:0 14px 0 rgba(0,0,0,.18);z-index:1}.road span{position:absolute;top:90px;width:110px;height:6px;background:var(--acid)}.road span:nth-child(1){left:18%}.road span:nth-child(2){left:45%}.road span:nth-child(3){left:72%}.cover-stack{position:absolute;right:7%;top:17%;z-index:3;width:43%}.cover-stack img{width:100%;aspect-ratio:1;object-fit:cover;box-shadow:12px 14px 0 rgba(0,0,0,.28)}.cover-stack img:first-child{transform:rotate(8deg)}.cover-stack img:last-child{position:absolute;inset:22% auto auto -58%;width:72%;transform:rotate(-9deg)}.ticker{overflow:hidden;background:var(--acid);color:var(--ink);border-block:5px solid var(--ink);transform:rotate(-1deg) scale(1.02)}.ticker div{width:max-content;padding:13px 0;font-family:'Russo One';font-size:20px;word-spacing:18px;animation:marquee 24s linear infinite}.ticker b{font-size:14px}@keyframes marquee{to{transform:translateX(-35%)}}.games{padding-block:140px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:64px}h2{font-size:clamp(48px,6vw,88px);letter-spacing:-.04em}.section-head>p{max-width:420px;color:#979da2;line-height:1.65}.game-feature{display:grid;grid-template-columns:1.25fr .75fr;min-height:520px;border:1px solid var(--line)}.game-art{position:relative;overflow:hidden;display:flex;align-items:end;padding:36px;background:#1d59e9}.game-art:before{content:"";position:absolute;inset:-20%;background:repeating-radial-gradient(circle at 70% 40%,transparent 0 32px,rgba(255,255,255,.09) 34px 38px);transform:rotate(-12deg)}.game-art>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.game-art:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8))}.game-art>span{position:absolute;right:28px;top:28px;z-index:3;padding:9px 12px;background:var(--acid);color:var(--ink);font-weight:900;font-size:11px;letter-spacing:.12em}.game-art strong{z-index:2;font-family:'Russo One';font-size:clamp(68px,8vw,130px);line-height:.78;letter-spacing:-.06em;text-shadow:8px 8px 0 #ef3867}.game-info{padding:58px 48px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.game-index{color:var(--acid);font-size:11px;font-weight:800;letter-spacing:.16em}.game-info h3{margin:22px 0;font-size:clamp(36px,4vw,62px);letter-spacing:-.035em}.game-info p{color:#a6abb0;line-height:1.7}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 38px}.tags span{border:1px solid var(--line);padding:8px 10px;font-size:10px;font-weight:800;letter-spacing:.13em}.text-link{padding-bottom:8px;border-bottom:2px solid var(--acid);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.text-link span{color:var(--acid);margin-left:16px}.games-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}.game-card{border:1px solid var(--line);transition:transform .25s,border-color .25s}.game-card:hover{transform:translateY(-7px);border-color:rgba(255,255,255,.5)}.card-image{position:relative;overflow:hidden;aspect-ratio:1}.card-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.game-card:hover img{transform:scale(1.045)}.card-image>span{position:absolute;right:16px;top:16px;display:grid;place-items:center;width:38px;height:38px;background:var(--acid);color:var(--ink);font:14px 'Russo One'}.card-meta{min-height:120px;padding:22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.card-meta h3{font-size:20px;line-height:1.1}.card-meta p{margin:9px 0 0;color:#858b90;font-size:11px;text-transform:uppercase;letter-spacing:.11em}.card-arrow{font-size:24px}.game-card.orange .card-image>span{background:#ff6b00}.game-card.blue .card-image>span{background:#3d8cff}.game-card.pink .card-image>span{background:#ff4b9b}.game-card.yellow .card-image>span{background:#ffd900}.game-card.red .card-image>span{background:#ff453a}.game-card.purple .card-image>span{background:#a46dff}.all-games{margin-top:54px;padding:25px 0;border-block:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font:22px 'Russo One';text-transform:uppercase}.all-games strong{font-size:34px;color:var(--acid)}.studio{position:relative;overflow:hidden;background:var(--paper);color:var(--ink)}.studio-inner{position:relative;min-height:780px;display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}.giant-fg{position:absolute;left:-11%;bottom:-31%;margin:0;font:700 650px/.75 'Russo One';letter-spacing:-.12em;color:rgba(9,11,13,.045);pointer-events:none}.studio .eyebrow{color:#5c6063}.studio-copy{position:relative;z-index:1}.studio-copy h2 em{color:#758500}.studio-copy>p:last-child{max-width:630px;margin-top:35px;font-size:17px;line-height:1.75;color:#54595d}.stats{position:relative;z-index:1;display:grid}.stats div{padding:31px 0;border-bottom:1px solid rgba(0,0,0,.18);display:flex;align-items:baseline;justify-content:space-between;gap:25px}.stats strong{font:clamp(54px,6vw,86px)/1 'Russo One'}.stats span{max-width:120px;text-align:right;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.1em}.contact{padding-block:150px}.contact h2{font-size:clamp(52px,8vw,120px)}.contact-row{margin-top:74px;padding-top:28px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:30px}.contact-row a{font-size:clamp(18px,3vw,34px);font-weight:700}.contact-row a span{color:var(--acid)}.contact-row p{color:#8d9398;font-size:13px;text-transform:uppercase;letter-spacing:.09em}.footer{min-height:130px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:25px;color:#888e93;font-size:11px;text-transform:uppercase;letter-spacing:.08em}.footer .brand{color:#fff}.footer .brand-mark{width:36px;height:36px}.footer>a:last-child{color:#fff}
+@media(max-width:1000px){.games-grid{grid-template-columns:repeat(2,1fr)}.studio-inner{grid-template-columns:1fr;padding-block:110px}.stats{grid-template-columns:repeat(3,1fr);gap:22px}.stats div{display:block}.stats span{display:block;text-align:left;margin-top:10px}.giant-fg{font-size:500px}}
+@media(max-width:900px){.shell{width:min(100% - 34px,720px)}.hero{grid-template-columns:1fr;padding-block:65px}.hero-visual{min-height:530px}.game-feature{grid-template-columns:1fr}.game-art{min-height:500px}.section-head{align-items:start;flex-direction:column}.games{padding-block:100px}}
+@media(max-width:650px){.nav{height:76px}.nav nav>a:not(.nav-cta){display:none}.nav nav{gap:10px}.hero{min-height:auto;padding-top:54px}.hero-text{font-size:15px}.hero-actions{flex-direction:column}.hero-actions a{width:100%}.hero-visual{min-height:400px}.hero-visual>strong{font-size:70px}.road{top:130px}.cover-stack{width:46%;top:19%}.games-grid{grid-template-columns:1fr}.game-art{min-height:350px;padding:24px}.game-art strong{font-size:62px}.game-info{padding:38px 24px}.studio-inner{padding-block:90px}.stats{grid-template-columns:1fr}.stats div{display:flex}.stats span{text-align:right}.contact{padding-block:100px}.contact-row{align-items:flex-start;flex-direction:column}.footer{padding:35px 0;align-items:flex-start;flex-direction:column}.footer p{order:3}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.game-card,.card-image img{transition:none}.ticker div{animation:none}}
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
+/* English portfolio and gameplay covers */
+.hero-visual {
+  background: #202b36;
+  transform: rotate(1.5deg);
 }
-
-body, html {
+.hero-visual::before {
+  z-index: 1;
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(0,0,0,.55), transparent 38%, rgba(0,0,0,.8));
+}
+.hero-image {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
+.hero-visual .poster-label,
+.hero-visual > p { color: #fff; }
+.hero-visual > strong { bottom: 84px; }
+.hero h1 { max-width: 760px; }
+.hero-text { max-width: 580px; }
 
-body {
-  background-color: #fafafa;
-  font-family: Trebuchet MS, Helvetica;
+.game-feature {
+  grid-template-columns: 1.2fr .8fr;
+  min-height: 0;
+  overflow: hidden;
 }
-
-/* Шапка сайта */
-
-header {
+.feature-media {
+  position: relative;
+  min-height: 530px;
+  background: #24252a;
+}
+.feature-media img {
   width: 100%;
-  padding: 10px 0.5% 0px 0.5%;
-  background: transparent;
-  float: left;
-  position: fixed;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
 }
-
-header #logo {
-  color: #fff;
-  cursor: pointer;
+.media-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 12px 14px;
+  background: var(--acid);
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
 }
-
-header #logo span {
-  font-size: 1.7em;
-  line-height: 45px;
-  margin-left: 40px;
-  font-family: 'Suez One', serif;
+.feature-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 48px;
 }
-
-@media (min-width: 701px) {
-  #logo {
-    float: left;
-    width: 30%;
-    font-size: 1.1em;
-  }
-
-  #about {
-    float: right;
-    width: 67%;
-  }
+.game-type {
+  margin: 0 0 16px;
+  color: var(--acid);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .14em;
 }
-
-@media (max-width: 700px) {
-  #logo {
-    margin-top: 15px;
-    width: 100%;
-    font-size: 1.5em;
-  }
-
-  #about {
-    float: left;
-    width: 100%;
-  }
+.feature-copy h3 {
+  margin: 0 0 22px;
+  font-size: clamp(38px, 4vw, 62px);
 }
-
-#about {
-  text-align: center;
-  font-size: 1em;
-  line-height: 40px;
-  margin-bottom: 10px;
+.feature-copy > p:not(.game-type),
+.card-content > p:not(.game-type) {
+  margin: 0 0 14px;
+  color: #a6abb0;
+  font-size: 14px;
+  line-height: 1.7;
 }
-
-#about > a {color: #fff}
-
-#about > a:hover {
-  color: #b0b0b0;
-  text-decoration: underline;
+.highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 30px;
+  padding: 0;
+  list-style: none;
 }
-
-#about > a:not(:last-child) {
-  margin-right: 7%;
+.highlights li {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .05em;
 }
-
-/* Стили для фиксированной шапки */
-
-.fixed {
-  z-index: 5000;
-  background-color: #fff;
-  border-bottom: 1px solid silver;
+.games-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
-
-header.fixed #logo {
-  color: #343434;
+.game-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
-
-.fixed #about a {color: #343434}
-.fixed #about a:hover {color: #7c7c7c}
-
-/* Главный блок на сайте */
-
-#top {
+.card-image {
+  aspect-ratio: 16 / 9;
+  background: #1c2024;
+}
+.card-image img { object-fit: cover; }
+.portrait-triptych {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.portrait-triptych img {
+  min-width: 0;
   width: 100%;
-  background-image: url(https://www.lovelymockups.com/wp-content/uploads/2017/01/mackbook-on-table.jpg);
-  background-blend-mode: multiply;
-  background-color: #2e3a44;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
+  height: 100%;
+  object-fit: cover;
 }
-
-@media (min-width: 1001px) {
-  #top {
-    font-size: 3em;
-    height: 1000px;
-  }
+.card-number {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  background: var(--acid);
+  color: var(--ink);
+  font: 14px 'Russo One', Impact, sans-serif;
 }
-
-@media (max-width: 1000px) and (min-width: 651px) {
-  #top {
-    font-size: 2em;
-    height: 600px;
-  }
+.card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
 }
+.card-content h3 {
+  margin: 0 0 18px;
+  font-size: clamp(27px, 2.6vw, 38px);
+  line-height: 1.06;
+  overflow-wrap: anywhere;
+}
+.card-content .text-link {
+  margin-top: auto;
+  padding-top: 22px;
+}
+.text-link:hover,
+.all-games:hover,
+.contact-row a:hover { color: var(--acid); }
+a:focus-visible { outline: 3px solid var(--acid); outline-offset: 4px; }
 
+@media (max-width: 900px) {
+  .game-feature { grid-template-columns: 1fr; }
+  .feature-media { min-height: 410px; }
+  .feature-copy { padding: 36px; }
+}
 @media (max-width: 650px) {
-  #top {
-    font-size: 1.3em;
-    padding-top: 50%;
-    height: 500px;
-  }
-}
-
-@media (max-width: 450px) {
-  #top {
-    font-size: 0.9em;
-  }
-}
-
-#top h1 {
-  padding-top: 20%;
-}
-
-#top h3 {
-  color: #ccc;
-}
-
-/* Блок с возможностями */
-
-#main {
-  float: left;
-  background-color: #f6f6f6;
-  border-top: 2px solid silver;
-  color: #484848;
-  font-size: 1.3em;
-}
-
-@media (min-width: 1401px) {
-  #main {
-    padding: 100px 20%;
-    width: 60%;
-  }
-}
-
-@media (max-width: 1400px) {
-  #main {
-    padding: 100px 10%;
-    width: 80%;
-  }
-}
-
-@media (max-width: 700px) {
-  #main div {
-    width: 98%!important;
-    margin-bottom: 20px;
-  }
-}
-
-#main div {
-  width: 48%;
-  margin-right: 2%;
-  float: left;
-}
-
-#main h2 {font-size: 3em}
-#main span {color: #a0a0a0}
-
-/* Блок с преимуществами */
-
-#overview {
-  float: left;
-  background-image: url(https://images.unsplash.com/1/work-station-straight-on-view.jpg?ixlib=rb-0.3.5&s=d055e15d0b8fd2de7295b726274d312b&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
-
-  background-blend-mode: multiply;
-  background-color: #403f40;
-  background-size: cover;
-  background-attachment: fixed;
-
-  padding: 100px 0;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-
-#overview h2 {font-size: 4em}
-#overview h4 {color: #ccc; font-size: 1.5em}
-
-@media (min-width: 561px) {
-  #overview h2 {font-size: 4em}
-}
-
-@media (max-width: 560px) {
-  #overview h2 {font-size: 2em}
-}
-
-#overview .img {
-  float: left;
-  width: 30%;
-  margin-right: 5%;
-  margin-top: 50px;
-}
-
-#overview .img:nth-child(odd) {
-  margin-left: 18%;
-}
-
-#overview img {
-  background: #fafafa;
-  padding: 5px;
-  border: 2px solid silver;
-  float: left;
-  width: 100%;
-  max-width: 500px;
-}
-
-#overview span {
-  float: left;
-  width: 100%;
-  font-size: 2em;
-  margin-top: 10px;
-}
-
-@media (max-width: 700px) {
-  #overview .img {
-    width: 80%!important;
-    margin-right: 0!important;
-    margin-left: 10%!important;
-  }
-}
-
-/* Блок с контактами */
-#contacts {
-  width: 100%;
-  float: left;
-  padding-bottom: 40px;
-  padding-top: 70px;
-  border-top: 4px solid #ccc;
-  background: #f4f4f4;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: lighter;
-}
-
-#contacts h5 {font-size: 3em; color: #4f4f4f}
-
-#form_input {
-  margin-top: 15px;
-  font-size: 1.1em;
-}
-
-@media (min-width: 1051px) {
-  #form_input {
-    width: 35%;
-    margin-left: 38%;
-  }
-}
-
-@media (max-width: 1050px) {
-  #form_input {
-    width: 90%;
-    margin-left: 10%;
-  }
-}
-
-#form_input label {
-  color: #505050;
-  cursor: pointer;
-  font-size: 1.4em;
-  font-family: 'Roboto Slab', serif;
-}
-
-#form_input label > span {
-  color: #e87e7e;
-}
-
-#form_input input,#form_input textarea {
-  margin-bottom: 10px;
-  width: 70%;
-  padding: 10px 2%;
-  border-radius: 7px;
-  border: 2px solid silver;
-  font-size: 0.9em;
-  color: #4a4a4a;
-}
-
-#form_input input:focus, #form_input textarea:focus {
-  border-color: #333;
-}
-
-.btn {
-  float: left;
-  border-radius: 5px;
-  padding: 5px 9px;
-  font-size: 1.2em;
-  background-color: #ec6550;
-  text-shadow: #454545 0 0 2px;
-  cursor: pointer;
-  color: white;
-  font-family: 'Roboto Slab', serif;
-}
-
-.btn:hover {
-  background-color: #c15443;
-}
-
-/* Вопросы и ответы */
-
-#faq {
-  background-color: #fff;
-  border-top: 2px dashed #e4e3e3;
-  width: 100%;
-  float: left;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-@media (min-width: 801px) {
-  #faq div {
-    width: 25%;
-    margin-left: 6%;
-    float: left;
-  }
-}
-
-@media (max-width: 800px) {
-  #faq div {
-    width: 80%;
-    margin-left: 10%;
-    float: left;
-  }
-}
-
-#faq .title {
-  font-weight: lighter;
-  color: #a3a0ad;
-  margin-bottom: 20px;
-  font-size: 2.2em;
-}
-
-#faq .heading {
-  color: #7d7d7d;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-#faq p {
-  font-family: Arimo, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #4a4a4a;
-  font-size: 0.95em;
-  margin-bottom: 40px;
+  .hero h1 { font-size: clamp(44px, 11vw, 64px); }
+  .hero-visual { min-height: 350px; }
+  .hero-visual > strong { font-size: 63px; }
+  .games-grid { grid-template-columns: 1fr; }
+  .feature-media { min-height: 260px; }
+  .feature-copy, .card-content { padding: 26px; }
+  .card-content h3 { font-size: 29px; }
+  .all-games { font-size: 17px; }
+  .studio-copy h2 { font-size: clamp(42px, 12vw, 68px); }
 }
